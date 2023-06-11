@@ -1,0 +1,84 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    overflow: auto;
+    box-sizing: border-box;
+
+    .page_content{
+        display: grid;
+        height: calc(100% - 96px - 40px);
+        box-sizing: border-box;
+        grid-template-columns: 45% auto;
+        align-items: center;
+        padding-left: 165px;
+
+        .text_container{
+            display: grid;
+            grid-column: 1;
+
+            .heading{
+                grid-column: 1;
+                grid-row: 1;
+                color: var(--primary2);
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                letter-spacing: 4.725px;
+                padding-bottom: 24px;
+            }
+
+            .space{
+                grid-column: 1;
+                grid-row: 2;
+                font-family: 'Bellefair';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 150px;
+                line-height: 150px;
+                color: var(--primary3);
+                padding: 0;
+            }
+
+            .body{
+                grid-column: 1;
+                grid-row: 3;
+                width: 444px;
+                font-family: 'Barlow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 32px;
+                color: var(--primary2);
+                padding-top: 24px;
+            }
+
+        }
+
+        .ellipse{
+            grid-column: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-self: center;
+            align-self: flex-end;
+            width: 274px;
+            height: 274px;
+            border-radius: 999px;
+            background-color: var(--primary3);
+            margin-bottom: 231px;
+
+            font-family: 'Bellefair';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 37px;
+            letter-spacing: 2px;
+
+        }
+
+    }
+}
